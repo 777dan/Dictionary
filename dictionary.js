@@ -17,7 +17,8 @@ let errors = 0; // счетчик ошибок
 let translate; // переменная для хранения того, что ввел пользователь
 label: // метка блока (цикла while)
 if (lang == "enRu") {
-    while (n > 0) {
+    // while (n > 0) {
+    for (let i = 0; i < n;) {
         n--; // бесконечный цикл while
         for (word in words) { // проходим в цикле ассоциативный массив words, каждое английское слово попадает в переменную word
             alert("Слово: " + word);
@@ -34,7 +35,8 @@ if (lang == "enRu") {
     }
 }
 else if (lang == "ruEn") {
-    while (n > 0) {
+    // while (n > 0) {
+    for (let i = 0; i < n;) {
         n--; // бесконечный цикл while
         for (word in words2) { // проходим в цикле ассоциативный массив words, каждое английское слово попадает в переменную word
             alert("Слово: " + word);
